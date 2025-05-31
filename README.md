@@ -49,7 +49,7 @@ A versatile Python script for processing PDF documents using various text extrac
     ```
 
 3.  **Install dependencies:**<br/>
-    Install following liberaries:
+    Install following libraries:
     ```txt
     requests
     python-dotenv
