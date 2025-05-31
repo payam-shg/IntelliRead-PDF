@@ -1,0 +1,11 @@
+requests
+python-dotenv
+PyMuPDF
+Pillow
+pytesseract
+tqdm
+reportlab
+google-generativeai
+groq
+openai
+lmstudio
