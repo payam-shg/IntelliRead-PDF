@@ -41,11 +41,11 @@ A versatile Python script for processing PDF documents using various text extrac
 
 2.  **Create and activate a virtual environment (recommended):**
     ```bash
-    python -m venv venv
+    python -m venv IntelliRead
     # Windows
-    venv\Scripts\activate
+    IntelliRead\Scripts\activate
     # macOS/Linux
-    source venv/bin/activate
+    source IntelliRead/bin/activate
     ```
 
 3.  **Install dependencies:**<br/>
@@ -74,30 +74,28 @@ A versatile Python script for processing PDF documents using various text extrac
     **Example:**
     ```env
     # AI Service API Keys
-    GROQ_API_KEY=your_groq_api_key_here
-    OPENAI_API_KEY=your_openai_api_key_here
-    OPENROUTER_API_KEY=your_openrouter_api_key_here
-    SILICONFLOW_API_KEY=your_siliconflow_api_key_here
-    GOOGLE_API_KEY=your_google_api_key_here
-
-    # OCR Service API Keys
-    OCR_SPACE_API_KEY=your_ocr_space_api_key_here
+    GROQ_API_KEY = your_groq_api_key_here
+    OPENAI_API_KEY = your_openai_api_key_here
+    OPENROUTER_API_KEY = your_openrouter_api_key_here
+    SILICONFLOW_API_KEY = your_siliconflow_api_key_here
+    GOOGLE_API_KEY = your_google_api_key_here
+    OCR_SPACE_API_KEY = your_ocr_space_api_key_here
 
     # Model Configurations (Repository IDs or specific names)
-    OLLAMA_MODEL=llama3.1:8b
-    GROQ_CHAT_MODEL=meta-llama/Llama-3-70b-chat-hf
-    OPENAI_CHAT_MODEL=gpt-4o-mini
-    OPENROUTER_CHAT_MODEL=google/gemini-flash-1.5
-    SILICONFLOW_CHAT_MODEL=Qwen/Qwen2-7B-Instruct
-    GOOGLE_GEMINI_MODEL=gemini-1.5-flash-latest
-    LM_STUDIO_MODEL=NousResearch/Hermes-2-Pro-Llama-3-8B-GGUF # Example Repository ID for LM Studio SDK
+    OLLAMA_MODEL = llama3.1:8b
+    GROQ_CHAT_MODEL = meta-llama/llama-4-scout-17b-16e-instruct
+    OPENAI_CHAT_MODEL = gpt-4o-mini
+    OPENROUTER_CHAT_MODEL = deepseek/deepseek-r1:free
+    SILICONFLOW_CHAT_MODEL = Qwen/Qwen3-8B
+    GOOGLE_GEMINI_MODEL = gemma-3-27b-it
+    LM_STUDIO_MODEL = gemma-3-12b-it-qat
 
     # Font Configuration for PDF Output (Optional)
-    # PDF_OUTPUT_FONT_NAME=Vazirmatn
-    # PDF_OUTPUT_FONT_PATH=./fonts/Vazirmatn-Regular.ttf # Example path, ensure font file exists
+    # PDF_OUTPUT_FONT_NAME = tahoma
+    # PDF_OUTPUT_FONT_PATH = ./fonts/tahoma.ttf # Example path, ensure font file exists
 
     # Tesseract Command Path (Windows - if Tesseract not in PATH)
-    # TESSERACT_CMD_PATH=C:\Program Files\Tesseract-OCR\tesseract.exe
+    # TESSERACT_CMD_PATH = C:\Program Files\Tesseract-OCR\tesseract.exe
     ```
 
 ## 🛠️ Usage
